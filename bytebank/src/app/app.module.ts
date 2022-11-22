@@ -9,6 +9,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { DEFAULT_ECDH_CURVE, DEFAULT_MAX_VERSION } from 'tls';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.modules';
 
 registerLocaleData(localePt,'pt');
 
@@ -21,7 +22,8 @@ registerLocaleData(localePt,'pt');
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
      {provide: LOCALE_ID, useValue: 'pt' },
