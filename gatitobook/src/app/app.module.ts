@@ -14,8 +14,7 @@ import { HomeModule } from "./home/home.module";
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
-        AppRoutingModule,
-        HomeModule
+        AppRoutingModule
     ]
 })
 export class AppModule { }
