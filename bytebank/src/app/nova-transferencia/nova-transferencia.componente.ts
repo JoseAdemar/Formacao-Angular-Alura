@@ -22,9 +22,10 @@ export class NovaTransferenciaCOmponent {
 
     const valorEmitir: Transferencia = {
       valor: this.valor, 
-      destino: this.destino,
+      destino: this.destino, 
     
     };
+    
 
     this.service.adicionar(valorEmitir).subscribe(
        (resultado) => {
